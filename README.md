@@ -20,19 +20,19 @@ The program uses Regular Expression for recognize lines.
         - calling to exist method;
         - assignment of exist variable;
        In case there is a line that not fit to non of this options exception will be throw.
-    3. Scope()- when new scope starting (if\while\method) we creating a new scope() with the relevant lines.
+   3. Scope()- when new scope starting (if\while\method) we creating a new scope() with the relevant lines.
         There are 2 classes which inherit from it:
      a. Condition()- in case the program recognize condition (if\while). in that class we checking if the condition
       is a valid boolean statement.
      b. Method()- contains an array with all his parameters() and variables().
-    4. Variables()- when there is an initialization of a new variable we create an obj which contain name, type, value,
+   4. Variables()- when there is an initialization of a new variable we create an obj which contain name, type, value,
      and boolean fields of global\local and final.
      a. Parameter()- inherit from variable. created when a new method create.
-    5. MyRegex()- contains all the regexes that we used in the program.
-    6. Check()- This class contains all checks are taken outside the creation of the object or
+   5. MyRegex()- contains all the regexes that we used in the program.
+   6. Check()- This class contains all checks are taken outside the creation of the object or
                checks that are common for some classes.
                for example- the method checkValue is used for both- variables and scopes.
-    7. IllegalException()- In case there is a running time problem we create a new IllegalException.
+   7. IllegalException()- In case there is a running time problem we create a new IllegalException.
 
 Oop Design: 
 Our program read a file and divide it into small objects.
